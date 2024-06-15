@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card | Andres Developer</title>
+    <!-- remix Icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- custom css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- custom Js  -->
@@ -22,13 +24,33 @@
         </div>
         <!-- card main -->
         <div class="card-main">
-            <!-- cards buttons -->
-            <div class="card-buttons">
-                <button data-section="#about" class="is-active">About</button>
-                <button data-section="#experience">Experience</button>
-                <button data-section="#contact">Contact</button>
+            <!-- about section -->
+            <div class="card-section is-active" id="about">
+                <div class="card-content">
+                    <h1 class="card-subtitle">About</h1>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ad
+                        obcaecati enim reiciendis dolore labore.</p>
+                </div>
+                <div class="card-social">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                </div>
             </div>
+            <!-- seccion de experiencia -->
+            <div class="card-section is-active" id="experience"> </div>
+            <!-- seccion de contacto -->
+            <div class="card-section is-active" id="contact"> </div>
+
         </div>
+        <!-- cards buttons -->
+        <div class="card-buttons">
+            <button data-section="#about" class="is-active">About</button>
+            <button data-section="#experience">Experience</button>
+            <button data-section="#contact">Contact</button>
+        </div>
+
     </div>
 </body>
 
