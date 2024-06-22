@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       // Remove active class from buttons and sections
-      [...buttons].flatMap((item) => item.classList.remove("is-active"));
-      [...sections].flatMap((sec) => sec.classList.remove("is-active"));
+      [...buttons].map((item) => item.classList.remove("is-active"));
+      [...sections].map((sec) => sec.classList.remove("is-active"));
 
       // Add active class to the clicked button
       btn.classList.add("is-active");
